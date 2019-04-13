@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sp-fx-ci-demo-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spFxCiDemo/SpFxCiDemoWebPart.js",
+          "manifest": "./src/webparts/spFxCiDemo/SpFxCiDemoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpFxCiDemoWebPartStrings": "lib/webparts/spFxCiDemo/loc/{locale}.js"
+  }
+}
