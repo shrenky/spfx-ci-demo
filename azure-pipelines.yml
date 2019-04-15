@@ -19,4 +19,12 @@ steps:
     npm install
     npm run build
     npm run test
+    gulp bundle --ship
+    gulp package-solution --ship
   displayName: 'npm install and build and test'
+
+  - task: CopyFiles@2
+  inputs:
+    #sourceFolder: # Optional
+    contents: '**\*.sppkg' 
+    targetFolder: $(build.artifactstagingdirectory)/drop
