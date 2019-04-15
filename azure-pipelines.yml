@@ -23,7 +23,7 @@ steps:
     gulp package-solution --ship
   displayName: 'npm install and build and test'
 
-  - task: CopyFiles@2
+- task: CopyFiles@2
   inputs:
     #sourceFolder: # Optional
     contents: '**\*.sppkg' 
