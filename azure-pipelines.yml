@@ -31,5 +31,5 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: $(Build.ArtifactStagingDirectory)
+    pathtoPublish: $(build.artifactstagingdirectory)/drop
     artifactName: CIDemoSPPKG
