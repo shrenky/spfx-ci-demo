@@ -27,9 +27,9 @@ steps:
   inputs:
     #sourceFolder: # Optional
     contents: '**\*.sppkg' 
-    targetFolder: $(build.artifactstagingdirectory)/drop
+    targetFolder: $(build.artifactstagingdirectory)
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: $(build.artifactstagingdirectory)/drop
+    pathtoPublish: $(build.artifactstagingdirectory)
     artifactName: CIDemoSPPKG
