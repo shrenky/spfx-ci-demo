@@ -26,8 +26,9 @@ steps:
 - task: CopyFiles@2
   inputs:
     #sourceFolder: # Optional
-    contents: 'sharepoint\solution\spfx-ci-demo.sppkg' 
+    contents: '**/*.sppkg' 
     targetFolder: $(build.artifactstagingdirectory)
+    Overwrite: true
     echo: $(build.artifactstagingdirectory)
 
 - task: PublishBuildArtifacts@1
