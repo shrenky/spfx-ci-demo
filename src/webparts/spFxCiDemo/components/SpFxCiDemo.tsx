@@ -14,7 +14,7 @@ export default class SpFxCiDemo extends React.Component<ISpFxCiDemoProps, {}> {
               <p className={ styles.subTitle }>Customize SharePoint experiences using Web Parts.</p>
               <p className={ styles.description }>{escape(this.props.description)}</p>
               <a href="https://aka.ms/spfx" className={ styles.button }>
-                <span className={ styles.label }>Add package to APP Catalog</span>
+                <span className={ styles.label }>Add package to APP Catalog test</span>
               </a>
             </div>
           </div>
